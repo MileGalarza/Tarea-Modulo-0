@@ -2,50 +2,110 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="icon" href="./imagenes/logo.png">
-
-    <!--Bootstrap -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Club Triatlón</title>
 </head>
 
 <body>
+    <header>
 
-    <header class="header2">
-
-        <div class="wrapper menu">
-            
-            <div class="logo">Club Triatlón CNMC </div>
+        <section class="wrapper">
+            <a href="index.html" class="logo">Club Triatlón CNMC</a>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Galería</a>
-                <a href="#">Contáctenos</a>
-                <a target="_blank" href="https://www.facebook.com/CNMCtri" class="fa fa-facebook"></a>
-                <a target="_blank" href="#" class="fa fa-twitter"></a>
-                <a target="_blank" href="https://www.instagram.com/cnmctri/?hl=es-la" class="fa fa-instagram"></a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/galeria.html">Galería</a></li>
+                    <li><a href="pages/contacto.html">Contáctenos</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/CNMCtri" class="fa fa-facebook"></a></li>
+                    <li><a target="_blank" href="#" class="fa fa-twitter"></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/cnmctri/?hl=es-la"
+                            class="fa fa-instagram"></a></li>
+                </ul>
             </nav>
-        
-        </div>
-       
-
-
+        </section>
     </header>
-    <div class="estilo1">¡Un estilo de vida saludable! </div>
-    <div class="estilo2">CNMC:corra, nade, monte cicla, trail y aventura para TODOS!</div>
 
-    <a href="#feature" class="btn custom-btn mt-3" data-aos="fade-up" data-aos-delay="600">Empezar</a>
+    <section class="contenido wrapper">
 
-    <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Leer más</a>
+        <div class="titulo1">¡Un estilo de vida saludable!</div>
 
+        <div class="titulo2">¡CNMC: corra, nade, monte cicla, trail y aventura para TODOS!</div>
 
-    <script src="./scrip.js"></script>
+    </section>
+    <section>
+        <div class="tarjetaprincipal">
+
+            <div class="tarjeta" style="width: 14rem;">
+                <img src="./images/corra.jpg" class="imgtarjeta" alt="..." title="Atletismo">
+                <div class="descripcion">
+                    <h2 class="card-title">Atletismo</h2><br>
+                    <h5>Dicho de una persona: Andar rápidamente y con tanto impulso que, entre
+                        un paso y el siguiente, quedan por un momento ambos pies en el aire.
+                        Correr es la manera más rápida de desplazamiento a pie de un animal o
+                        de una persona. A la acción y efecto se denomina carrera. Esta
+                        actividad es una forma de ejercicio aeróbico tanto como anaeróbico. </h5>
+                </div>
+            </div>
+
+            <div class="tarjeta" style="width: 14rem;">
+                <img src="./images/nade.jpg" class="imgtarjeta" alt="..." title="Natación">
+                <div class="descripcion">
+                    <h2 class="card-title">Natación</h2><br>
+                    <h5> La natación es el movimiento y el desplazamiento a través del agua
+                        mediante el uso de las extremidades corporales y por lo general sin
+                        utilizar ningún instrumento o apoyo para avanzar. La natación es
+                        consistentemente una de las principales actividades recreativas
+                        públicas y en algunos países las lecciones de natación son
+                        una parte obligatoria del currículo educativo. </h5>
+                </div>
+            </div>
+            <div class="tarjeta" style="width: 14rem;">
+                <img src="./images/monte_cicla.jpg" class="imgtarjeta" alt="..." title="Ciclismo">
+                <div class="descripcion">
+                    <h2 class="card-title">Ciclismo</h2><br>
+                    <h5>El ciclismo es una actividad que agrupa una serie deporte que emplean
+                        la bicicleta. Es unos de los deporte mas populares con fama mundial
+                        cuya presencia ha ganado espacio en los juegos olímpicos. La bicicleta
+                        esta directamente relacionada con el ciclismo, las primeros
+                        antecedentes de este vehículo se encuentran en las civilizaciones de
+                        China, Egipto e India. </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    CNMC &copy; 2022.
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col-4">
+                    <i class="fa fa-envelope-o mr-1"></i>
+                    <a href="#">cnmctri@gmail.com</a>&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-phone mr-1"></i> +57 304 6670539
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
