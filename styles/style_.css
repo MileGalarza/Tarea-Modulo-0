@@ -1,9 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 body{
-    background: linear-gradient(#d4f7e1, #d5eed0);
+    background: linear-gradient(#84f76d, #d5eed0);
+  
+  
 }
 p {
     margin-bottom: 20px;
@@ -16,33 +19,14 @@ p {
     margin: auto;
     overflow: hidden;
 }
-
+a {
+    text-decoration: none !important;
+}
 header {
     background: rgba(0, 0, 0, 0.9);
     width: 100%;
     position: fixed;
     z-index: 10;
-}
-
-.tituloprincipal{
-    float: left;
-    font-family: 'Plain', sans-serif;
-    font-size: xx-large;
-    color:white;
-    text-decoration: none;
-    margin-top: 10px; 
-    font-weight: 700;
-    
-}
-
-.logo{
-    float: left;
-    font-family: 'Plain', sans-serif;
-    font-size: xx-large;
-    color:white;
-    text-decoration: none;
-    margin-top: 10px; 
-    font-weight: 700;
     
 }
 
@@ -59,7 +43,7 @@ nav ul {
 
 nav ul li {
     float: left;
-    font-family: 'Plain', sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
     border-radius: 10px;
 }
@@ -69,14 +53,13 @@ nav ul li a {
     /* Convertimos los elementos a en elementos bloque para manipular el padding */
     padding: 20px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 nav ul li:hover {
-    background: #0a331a;
-    
-    
+    background: #3ead47;
 }
+
 .contenido {
     padding-top: 80px;
     position: relative;
@@ -129,7 +112,7 @@ header .logo {
     text-align: center;
     color: black;
     padding: 50px;
-    background: linear-gradient(#d4f7e1, #d5eed0);
+    background: linear-gradient(#84f76d, #d5eed0);
     border-radius: 10px;
 
 }
@@ -155,9 +138,21 @@ div.reset {
 /*Variables*/
 :root {
     --primary-color: white;
-    --secundary-color: #6e6d6d;
+    --secundary-color: #b6b1b1;
 }
 
+.form {
+    background-color: var(--secundary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Calibri;
+    border-radius: 10px;
+}
 
 .btn {
     margin-top: 20px;
@@ -167,6 +162,7 @@ div.reset {
     border: 1px solid var(--primary-color);
     color: white;
     border-radius: 10px;
+
 }
 
 .form textarea {
@@ -180,16 +176,17 @@ div.reset {
 
 .titleform {
     text-align: left;
+   
 }
 
 /*noticias*/
 .tarjetaprincipal {
-    width: 75%;
+    width: 85%;
     margin: 18px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 45px;
     background-color: beige;
 }
 
@@ -216,117 +213,7 @@ h5 {
     width: auto;
     display: flex;
     text-align: justify;
-    padding: 10px;
 }
-
-.contendor-form{
-    position: relative;
-    background: rgb(40, 53, 44);
-    width: 30%;
-    max-width: auto;
-    margin: 40px auto;
-    color: white;
-    border-radius: 5px;
-    padding: 40px;
-    
-}
-
-.contendor-form .toggle{
-    position: absolute;
-    top:7px;
-    right: 7px;
-    width: 200px;
-    height: 30px;
-    font-size: 16px;
-    line-height: 25px;
-    text-align: center;
-    border-top: 2px solid #0e7731;;
-    border-bottom: 2px solid #0e7731;;
-    transition: all .5s case;
-    cursor: pointer;
-   
-}
-
-.contendor-form .toggle span{
-    letter-spacing: 1px;
-
-}
-.contendor-form .toggle a{
-    color: #fff;
-    text-decoration: none;
-}
-.contendor-form .toggle:hover{
-    border-top: 2px solid #0075d9;
-    border-bottom: 2px solid #0075d9;
-}
-
-.contendor-form h2{
-    margin: 0 0 20px 0;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.contendor-form input[type="text"],
-.contendor-form input[type="password"],
-.contendor-form input[type="email"]{
-    outline: none;
-    background: rgba(0, 0, 0, .5);
-    display: block;
-    width: 100%;
-    padding: 10px 5px;
-    color: #fff;
-    border: none;
-    border-radius: 2px;
-    border-bottom: 4px solid #0e7731;;
-    font-family: 'Plain', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0 0 20px 0;
-}
-
-.contendor-form input[type="submit"]{
-    background: #0e7731;
-    color: #fff;
-    border: none;
-    width: 100%;
-    padding: 10px 0;
-    font-weight: normal;
-    font-family: 'Plain', sans-serif;
-    letter-spacing: 1px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all .5s ease;
-}
-
-.contendor-form input[type="submit"]:hover{
-    background: rgba(0,117,217,0.7);
-    
-}
-
-.contendor-form .reset-password{
-    background: rgba(0,117,217,0.7);
-    width: 93%;
-    padding: 15px;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.contendor-form .reset-password a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    
-}
-
-/*Footer
-.site-footer {
-    border-top: 2.5px solid #8d1313;
-    text-align: center;
-    background-color: black;
-    color: whitesmoke;
-}*/
 /*Footer*/
 footer{
     font-weight: bold;
@@ -334,3 +221,4 @@ footer{
     height: 50px ;
     padding-top: 15px;
 }
+ 
