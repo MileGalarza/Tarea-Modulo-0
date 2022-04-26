@@ -228,7 +228,7 @@ h5 {
     color: white;
     border-radius: 5px;
     padding: 40px;
-    
+    border-radius: 10px;
 }
 
 .contendor-form .toggle{
@@ -244,6 +244,7 @@ h5 {
     border-bottom: 2px solid #0e7731;;
     transition: all .5s case;
     cursor: pointer;
+    border-radius: 10px;
    
 }
 
@@ -298,7 +299,19 @@ h5 {
     cursor: pointer;
     transition: all .5s ease;
 }
-
+.contendor-form input[type="button"]{
+    background: #0e7731;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: 'Plain', sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
 .contendor-form input[type="submit"]:hover{
     background: rgba(0,117,217,0.7);
     
