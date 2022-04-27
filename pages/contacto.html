@@ -32,7 +32,7 @@
     </header>
 
     <section class="top">
-        <!--contenido de contáctenos</p>-->
+        <!--contenido de registrate-->
     </section>
     
     <div class="contendor-form">
@@ -40,28 +40,29 @@
             <a href="#" onclick="mostrarIniciarSesion()">Iniciar Sesión</a>&nbsp;&nbsp; -&nbsp;&nbsp;
             <a href="#" onclick="mostrarCrearCuenta()">Crear cuenta</a>
         </div>
-            <div id="iniciarSesion">
-                <h2>Iniciar Sesión</h2>
+            <div id="iniciarSesion"><br>
+                <h2>Iniciar Sesión</h2><br>
                     <form action="#">
                         <input type="text" placeholder="Usuario" required >
                         <input type="password" placeholder="Contraseña" required >
                         <input type="submit" value="Iniciar Sesión">
-                </form>
-            </div>
+                </form><br>
+                <div class="reset-password">
+                    <a href="#"> Olvidé mi Contraseña</a>
+                </div>
+            </div><br>
             <div id="crearCuenta">
                 <h2>Crea tu cuenta</h2>
                 <form>
-                        <input type="text" id="txtUsuario" placeholder="Usuario" required >
+                        <input type="text" id="txtUsuario" name="txtUsuario" placeholder="Usuario" required >
                         <input type="password" id="txtPassword" placeholder="Contraseña" required >
                         <input type="email" id="txtEmail" placeholder="Correo electrónico" required >
                         <input type="text" id="txtTelefono" placeholder="Teléfono" required >
                         <input type="button" id="btnRegistrar" value="Registrarse">
                 </form>
                 
-            </div>
-            <div class="reset-password">
-                <a href="#"> Olvidé mi Contraseña</a>
-            </div>
+            </div><br>
+            
     </div>
 
 

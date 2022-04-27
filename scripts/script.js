@@ -1,5 +1,7 @@
 
 
+mostrarCrearCuenta();
+
 function mostrarCrearCuenta(){
     div = document.getElementById('iniciarSesion');
     div.style.display = 'none';
@@ -13,4 +15,5 @@ function mostrarIniciarSesion(){
 
     div = document.getElementById('iniciarSesion');
     div.style.display = '';
+    document.getElementById("txtUsuario").focus();
 }

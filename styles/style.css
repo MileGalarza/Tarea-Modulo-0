@@ -1,12 +1,15 @@
 * {
     padding: 0;
     margin: 0;
+   
 }
 body{
     background: linear-gradient(#d4f7e1, #d5eed0);
+    
 }
 p {
     margin-bottom: 20px;
+    
 
 }
 
@@ -15,6 +18,9 @@ p {
     /*max-width: 100%;*/
     margin: auto;
     overflow: hidden;
+    text-decoration: none !important;
+   
+   
 }
 
 header {
@@ -22,11 +28,12 @@ header {
     width: 100%;
     position: fixed;
     z-index: 10;
+  
 }
 
 .tituloprincipal{
     float: left;
-    font-family: 'Plain', sans-serif;
+    font-family: Arial !important;
     font-size: xx-large;
     color:white;
     text-decoration: none;
@@ -37,7 +44,7 @@ header {
 
 .logo{
     float: left;
-    font-family: 'Plain', sans-serif;
+    font-family: Arial !important;
     font-size: xx-large;
     color:white;
     text-decoration: none;
@@ -49,19 +56,23 @@ header {
 nav {
     float: right;
     /* Desplazamos el nav hacia la izquierda */
+    text-decoration: none;
 }
 
 nav ul {
     list-style: none;
     overflow: hidden;
     /* Limpiamos errores de float */
+    text-decoration: none;
+
 }
 
 nav ul li {
     float: left;
-    font-family: 'Plain', sans-serif;
+    font-family: Arial !important;
     font-size: 16px;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -74,6 +85,7 @@ nav ul li a {
 
 nav ul li:hover {
     background: #0a331a;
+    text-decoration: none;
     
     
 }
@@ -86,6 +98,7 @@ nav ul li:hover {
     background: url(../images/familia.jpg);
     background-size: cover;
     background-position: center center;
+    text-decoration: none;
 }
 
 header .logo {
@@ -131,6 +144,7 @@ header .logo {
     padding: 50px;
     background: linear-gradient(#d4f7e1, #d5eed0);
     border-radius: 10px;
+    text-decoration: none;
 
 }
 
@@ -140,6 +154,7 @@ div.noticia img.izquierda {
     width: 400px;
     height: 400px;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 div.reset {
@@ -229,6 +244,7 @@ h5 {
     border-radius: 5px;
     padding: 40px;
     border-radius: 10px;
+    font-family: Arial !important;
 }
 
 .contendor-form .toggle{
@@ -237,14 +253,15 @@ h5 {
     right: 7px;
     width: 200px;
     height: 30px;
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
     border-top: 2px solid #0e7731;;
     border-bottom: 2px solid #0e7731;;
     transition: all .5s case;
     cursor: pointer;
     border-radius: 10px;
+    font-family: Arial !important;
    
 }
 
@@ -255,6 +272,7 @@ h5 {
 .contendor-form .toggle a{
     color: #fff;
     text-decoration: none;
+    font-family: Arial !important;
 }
 .contendor-form .toggle:hover{
     border-top: 2px solid #0075d9;
@@ -270,6 +288,7 @@ h5 {
 
 .contendor-form input[type="text"],
 .contendor-form input[type="password"],
+.contendor-form input[type="number"],
 .contendor-form input[type="email"]{
     outline: none;
     background: rgba(0, 0, 0, .5);
@@ -280,10 +299,11 @@ h5 {
     border: none;
     border-radius: 2px;
     border-bottom: 4px solid #0e7731;;
-    font-family: 'Plain', sans-serif;
+    font-family: Arial !important;
     font-size: 14px;
     font-weight: normal;
     margin: 0 0 20px 0;
+    border-radius: 10px;
 }
 
 .contendor-form input[type="submit"]{
@@ -293,11 +313,12 @@ h5 {
     width: 100%;
     padding: 10px 0;
     font-weight: normal;
-    font-family: 'Plain', sans-serif;
+    font-family: Arial !important;
     letter-spacing: 1px;
     font-size: 16px;
     cursor: pointer;
     transition: all .5s ease;
+    border-radius: 10px;
 }
 .contendor-form input[type="button"]{
     background: #0e7731;
@@ -306,11 +327,12 @@ h5 {
     width: 100%;
     padding: 10px 0;
     font-weight: normal;
-    font-family: 'Plain', sans-serif;
+    font-family: Arial !important;
     letter-spacing: 1px;
     font-size: 16px;
     cursor: pointer;
     transition: all .5s ease;
+    border-radius: 10px;
 }
 .contendor-form input[type="submit"]:hover{
     background: rgba(0,117,217,0.7);
@@ -324,13 +346,14 @@ h5 {
     text-align: center;
     border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-radius: 10px;
 }
 
 .contendor-form .reset-password a{
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-    
+    font-family: Arial !important;
 }
 
 /*Footer
@@ -346,4 +369,7 @@ footer{
     background-color: rgba(87, 85, 85, 0.5);
     height: 50px ;
     padding-top: 15px;
+}
+a {
+    text-decoration: none !important;  
 }
